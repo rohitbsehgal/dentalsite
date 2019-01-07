@@ -1,17 +1,18 @@
+body{
+  font-family: 'Comfortaa', cursive;
+}
 .header{
   position: fixed;
   top: 0;
-  height: 8%;
 }
 .headerRow{
   height: 100%;
-  background-color: #474954;
+  background-color: #4ab1d1;
 }
 .headerButtons{
-  height: 100%;
   border-right: 1px solid rgba(86,61,124,.2);
   align: center;
-  background-color: #474954;
+  background-color: #4ab1d1;
 }
 .headerButtonContainer{
   height: 100%;
@@ -20,20 +21,31 @@
   height:100%;
   width: 100%;
   border-radius: 0;
-  color: #7CDEDC;
+  color: #474954;
   border: none;
+  font-size: 20px;
 }
 .colHeight{
   height:100%;
 }
 .dentalHeader{
   margin-top: 10%;
-  color: #7CDEDC;
+  color: #474954;
+  margin-bottom: 0;
+}
+.underDentalHeader{
+  text-align: center;
+  color: #474954;
+}
+.underFinalButton{
+  color: #474954;
+  text-align: center;
+  margin-bottom: 0;
 }
 .headerFinalButton{
   height: 100%;
   padding:0px;
-  background-color: #474954;
+  background-color: #4ab1d1;
 }
 .finalButtn{
   height: 100%;
@@ -41,45 +53,22 @@
   border: none;
   border-radius: 0;
   font-size: 30px;
-  color: #7CDEDC;
+  color: #474954;
 }
 .headerTitle{
-  height: 100%;
   border-right: 1px solid rgba(86,61,124,.2);
-  background-color: #474954;
+  background-color: #4ab1d1;
 }
 .firstPageContent{
   height:100%;
   top: 8%;
   position: absolute;
   z-index: -1;
-  background-color: #474954;
+  /*background-color: #474954;*/
 }
 .firstPage{
   height: 100%;
   position: relative;
-}
-.swiper-container{
-  width: 50%;
-  margin-top:5%;
-}
-.swiper-slide{
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 .sliderimages{
   width:825px;
@@ -90,10 +79,10 @@
   height: 75px;
   width: 150px;
   border-radius: 0;
-  background-color: #354adc75;
+  background-color: #4ab1d1;
   color: white;
   border: 1px solid transparent;
-  left:25%;
+  left:42%;
 }
 .sliderbtnHeight{
   height:75px;
@@ -101,21 +90,21 @@
 .sliderButtonContainer{
   position: absolute;
   z-index: 1;
-  top: 55%;
+  top: 70%;
 }
 .secondPageAccord{
   margin-top:5%;
 }
 .underSliderHeader{
   text-align: center;
-  color: #F0EEEF;
+  color: #474954;
 }
 .secondPageContent{
   height:92%;
   top: 100%;
   position: absolute;
   z-index: -1;
-  background-color: #474954;
+  /*background-color: #474954;*/
 }
 .secondPage{
   height: 100%;
@@ -129,9 +118,35 @@
   top: 192%;
   position: absolute;
   z-index: -1;
-  background-color: #474954;
+  /*background-color: #474954;*/
 }
 .thirdPage{
   height: 100%;
   margin-top:5%
+}
+.fourthPageContent{
+  height:92%;
+  top: 292%;
+  position: absolute;
+  z-index: -1;
+  background-color: #474954;
+}
+.fourthPage{
+  height: 100%;
+  margin-top:5%
+}
+
+
+
+.footer{
+  position: fixed;
+  bottom: 0;
+}
+.footerRow{
+  height: 100%;
+}
+.emailButton{
+  border-radius: 20px;
+  margin-bottom:25px;
+  margin-left: 25px;
 }

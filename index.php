@@ -98,7 +98,7 @@
           </a>
         </div>
         <div class="underSliderText">
-          <h5 class="underSliderHeader"><?php include('firstPageUnderSlider.txt'); ?></h5>
+          <h5 class="underSliderHeader"><?php include('texts/firstPageUnderSlider.txt'); ?></h5>
         </div>
       </div>
       <div class="col col-lg-2">
