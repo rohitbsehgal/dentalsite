@@ -1,12 +1,17 @@
 body{
   font-family: 'Comfortaa', cursive;
+  color:#474954;
+}
+/* dropdown header styling */
+.headerMobile{
+  display:none;
 }
 .header{
   position: fixed;
   top: 0;
+  z-index:3;
 }
 .headerRow{
-  height: 100%;
   background-color: #4ab1d1;
 }
 .headerButtons{
@@ -60,9 +65,7 @@ body{
   background-color: #4ab1d1;
 }
 .firstPageContent{
-  height:100%;
-  top: 8%;
-  position: absolute;
+  margin-top:8%;
   z-index: -1;
   /*background-color: #474954;*/
 }
@@ -90,7 +93,7 @@ body{
 .sliderButtonContainer{
   position: absolute;
   z-index: 1;
-  top: 70%;
+  top: 75%;
 }
 .secondPageAccord{
   margin-top:5%;
@@ -100,9 +103,6 @@ body{
   color: #474954;
 }
 .secondPageContent{
-  height:92%;
-  top: 100%;
-  position: absolute;
   z-index: -1;
   /*background-color: #474954;*/
 }
@@ -114,9 +114,6 @@ body{
   color: #474954;
 }
 .thirdPageContent{
-  height:92%;
-  top: 192%;
-  position: absolute;
   z-index: -1;
   /*background-color: #474954;*/
 }
@@ -125,19 +122,70 @@ body{
   margin-top:5%
 }
 .fourthPageContent{
-  height:92%;
-  top: 292%;
-  position: absolute;
   z-index: -1;
-  background-color: #474954;
+
 }
 .fourthPage{
   height: 100%;
   margin-top:5%
 }
+.fifthPageContent{
+  z-index: -1;
 
-
-
+}
+.fifthPage{
+  height: 100%;
+  margin-top:5%
+}
+.meetHeader{
+  margin-top: 5%;
+  text-align: center;
+  color: #474954;
+  width:100%;
+}
+.blogHeader{
+  width:100%;
+  text-align: center;
+}
+.blogBody{
+  width:100%;
+  text-align: center;
+}
+.flip-card {
+  margin-left:12%;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+.flip-card-back {
+  background-color: #4ab1d1;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
 .footer{
   position: fixed;
   bottom: 0;
@@ -149,4 +197,59 @@ body{
   border-radius: 20px;
   margin-bottom:25px;
   margin-left: 25px;
+}
+/* mobile header */
+@media only screen and (max-width: 1245px) {
+  .header{
+    display:none;
+  }
+  .headerMobile{
+    display: inline;
+    position: fixed;
+    top: 0;
+    z-index:3;
+  }
+  .dentalHeader{
+    margin-top: 1%;
+    color: #474954;
+    margin-bottom: 0;
+    width:100%;
+    text-align:center;
+  }
+  .underDentalHeader{
+    text-align: center;
+    color: #474954;
+    width:100%;
+    text-align:center;
+  }
+  .underFinalButton{
+    color: #474954;
+    text-align: center;
+    margin-bottom: 0;
+    width:100%;
+    text-align: center;
+  }
+  .mobileDrop{
+    width:100%;
+    margin:0px;
+  }
+  .dropdown{
+    width: 100%;
+  }
+  .dropdown > button{
+    width: 100%;
+  }
+  .dropdown-menu{
+    width:100%;
+    text-align:center;
+  }
+  .sliderButtonContainer{
+    display:none;
+  }
+  .firstPageContent{
+    margin-top: 205px;
+  }
+  .dissapearingCols{
+    display: none;
+  }
 }
